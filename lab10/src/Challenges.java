@@ -40,7 +40,21 @@ public class Challenges {
     public int[] groupByNumbers(int[] array) {
         // TODO: Implement method
         // same numbers, group together (order doesn't matter)
-        return new int[]{};
+        // {1, 3, 2, 3, 1} ---> {1, 1, 3, 3, 2}
+        int n = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] == n) {
+                array[i] = n;
+            }
+
+            // else statement (if number doesn't equal 1, remember index)
+            // if statement (if number equals 1, move to remembered index)
+        /*    for (int j = i + 1; j < array.length; j++) {
+                if (j == i) {
+
+                } */
+            }
+        }
     }
 
     /**
